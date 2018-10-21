@@ -13,187 +13,125 @@ $(document).ready(function () {
             gender: {
                 required: true,
             },
-            first_name: {
+            dob: {
                 required: true,
                 minlength: 4
             },
-            first_name: {
+            email_id: {
                 required: true,
                 minlength: 4
             },
-            first_name: {
+            mobile_num: {
                 required: true,
                 minlength: 4
             },
-            first_name: {
+            city: {
                 required: true,
                 minlength: 4
             },
-            first_name: {
+            area: {
                 required: true,
                 minlength: 4
             },
-            EmailId: {
+            pincode: {
                 required: true,
-                email: true
-            },
-            mobileNum1: {
-                required: true,
-                number: true,
-                minlength: 10
+                minlength: 4
             },
             address: {
                 required: true,
-                minlength: 10
-            }
+                minlength: 4
+            },
+            state: { required: true },
+            country: { required: true }
+
         },
         messages: {
-            fullName: " Please Enter Full Name",
-            EmailId: " Please Enter Valid Email",
-            mobileNum1: " Please Enter Valid Mobile",
-            address: " Please Enter Contact Address",
+            first_name: " Please Enter Full Name",
+            sur_name: " Please Enter Valid Email",
+            gender: " Please Select Gender",
+            dob: " Please Enter Valid DOB",
+            email_id: " Please Enter Valid email_id",
+            mobile_num: " Please Enter Valid mobile_num",
+            city: " Please Enter Valid city",
+            area: " Please Enter Valid area",
+            pincode: " Please Enter Valid pincode",
+            address: " Please Enter Valid address",
+            state: " Please Enter Valid state",
+            country: " Please Enter Valid country",
+
         },
+        errorPlacement: function(error, element) 
+        {
+            if ( element.is(":radio") ) 
+            {
+                error.appendTo( element.parents('.radio_check') );
+            }
+            else 
+            { // This is the default behavior 
+                error.insertAfter( element );
+            }
+         },
         submitHandler: function (form, e) {
-            e.preventDefault();
-            console.log("sibmit")
-            var a = document.getElementById('fullName').value;
-            var b = document.getElementById('EmailId').value;
-            var c = document.getElementById('mobileNum1').value;
-            var d = document.getElementById('address').value;
+            // e.preventDefault();
+            var a = document.getElementById('first_name').value;
+            var b = document.getElementById('sur_name').value;
+            var c = document.getElementById('gender').value;
+
 
             PatientInfo = {
                 "name": a,
                 "email": b,
                 "mobile": c,
-                "address": 'address',
-                "title" : "title",
-                "description" : d,
             };  
-            getStartedPost(PatientInfo);
+            // getStartedPost(PatientInfo);
+
+            console.log("validated successfully", PatientInfo);
+
+            return true;
 
         }
     });
-
-    // $('.mailSubscribe').validate({ // initialize the plugin
-    //     rules: {
-    //         EMAIL: {
-    //             required: true,
-    //             email: true
-    //         },
-    //     },
-    //     messages: {
-    //         EmailId: " Please Enter Valid Email",
-    //     },
-    //     submitHandler: function (form, e) {
-    //         e.preventDefault();
-    //         console.log("sibmit")
-
-    //         var b = document.getElementById('EmailId').value;
-
-    //         PatientInfo = {
-    //             "name": '',
-    //             "email": b,
-    //             "mobile": c,
-    //         };  
-    //         getStartedPost(PatientInfo);
-
-    //     }
-    // });
-
-
-    $('.app-link-send').validate({ // initialize the plugin
-        rules: {
-            mobileNum: {
-                required: true,
-                number: true,
-                minlength: 10
-            },
-        },
-        messages: {
-            mobileNum: " Please Enter Valid Mobile",
-        },
-        errorClass: "error-msg-label",
-        validClass: "has-error",
-        errorElement: "label",
-        highlight: function(element, errorClass, validClass) {
-            $(element).parents('.form-group').addClass('validClass');
-        },
-        unhighlight: function(element, errorClass, validClass) {
-            $(element).parents('.form-group').removeClass('has-error');
-            $(element).parents('.form-group').addClass('has-success');
-        },
-        submitHandler: function (form, e) {
-            e.preventDefault();
-            console.log("sibmit")
-
-            var mobileNum1 = document.getElementById('mobileNum').value;
-
-            MobileInfo = {
-                "application": 'care',
-                "mobile": mobileNum1,
-                "country": '91',
-            };  
-            console.log(MobileInfo)
-            appLinkSend(MobileInfo);
-
-        }
-    });
-
 });
 
 
-function getStartedPost(params){
-    respmsg = document.getElementById("response-desc");
-    
-    $.ajax({
-        type: "POST",
-        url: "http://www.redheal.com/redheal/api/redheal/ticket/contact",
-        dataType: "json",
-        data : params, 
-        success: function (response) {
-            // console.log(response);
-            console.log(response.status);
-            if (response.status === "success") {
-                $( "#response-desc" ).empty();
-             txt = document.createTextNode(response.description);
-             
-            respmsg.appendChild(txt);
-            
-            } else {
-                $( "#response-desc" ).empty();
-            txt = document.createTextNode(response.description);
-           
-            respmsg.appendChild(txt);
 
-            }
-        },
-    });
-}
 
-function appLinkSend(params){
-    respmsgApplink = document.getElementById("response-msg-applink");
-    console.log(params)
-    $.ajax({
-        type: "POST",
-        url: "http://www.redheal.com/redheal/api/redheal/linkrequest",
-        dataType: "json",
-        data : params, 
-        success: function (response) {
-            // console.log(response);
-            console.log(response.status);
-            if (response.status === "success") {
-                $( "#response-msg-applink" ).empty();
-             txt = document.createTextNode(response.description);
-             
-             respmsgApplink.appendChild(txt);
-            
-            } else {
-                $( "#response-msg-applink" ).empty();
-            txt = document.createTextNode(response.description);
-           
-            respmsgApplink.appendChild(txt);
+//     $('.app-link-send').validate({ // initialize the plugin
+//         rules: {
+//             mobileNum: {
+//                 required: true,
+//                 number: true,
+//                 minlength: 10
+//             },
+//         },
+//         messages: {
+//             mobileNum: " Please Enter Valid Mobile",
+//         },
+//         errorClass: "error-msg-label",
+//         validClass: "has-error",
+//         errorElement: "label",
+//         highlight: function(element, errorClass, validClass) {
+//             $(element).parents('.form-group').addClass('validClass');
+//         },
+//         unhighlight: function(element, errorClass, validClass) {
+//             $(element).parents('.form-group').removeClass('has-error');
+//             $(element).parents('.form-group').addClass('has-success');
+//         },
+//         submitHandler: function (form, e) {
+//             e.preventDefault();
+//             console.log("sibmit")
 
-            }
-        },
-    });
-}
+//             var mobileNum1 = document.getElementById('mobileNum').value;
+
+//             MobileInfo = {
+//                 "application": 'care',
+//                 "mobile": mobileNum1,
+//                 "country": '91',
+//             };  
+//             console.log(MobileInfo)
+//             appLinkSend(MobileInfo);
+
+//         }
+//     });
+
+// });

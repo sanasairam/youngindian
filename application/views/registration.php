@@ -11,15 +11,15 @@
                 </div>
             </div>
             <div class="registration-form my-5">
-                <form class="volunteerRegistration" action="./" method="POST">
+                <form class="volunteerRegistration" action="./register" method="POST">
                     <div class="row">
                     <span><?php if($userDetails){
-                     echo $heading ;
+                     echo "submited successfully" ;
                     } ?></span>
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="first_name">First Name :</label>
-                                <input type="text" name="first_name" class="form-control" id="first_name" placeholder="Enter First Name">
+                                <input type="text" name="first_name" class="form-control" id="first_name" placeholder="Enter First Name" required>
                                 <small id="errorMsg" class="form-text text-muted"> </small>
                             </div>
                         </div>
@@ -38,20 +38,21 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="form-group">
+                            <div class="form-group radio_check">
                                 <label for="">Gender :</label>
                                 <div class="d-flex">
                                     <div class="form-check">
                                         <label class="form-check-label mr-3">
-                                            <input type="radio" class="form-check-input" value="male" name="gender">Male
+                                            <input id="gender"  type="radio" class="form-check-input" value="male" name="gender">Male
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" value="female" name="gender">Female
+                                            <input id="gender" type="radio" class="form-check-input" value="female" name="gender">Female
                                         </label>
                                     </div>
                                 </div>
+                                <!-- <label id="gender-error" class="error" for="gender">This field is required.</label> -->
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">

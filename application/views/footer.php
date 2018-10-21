@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <p> &copy; 2018. Universe. All rights reserved | Design by
+                        <p> &copy; 2014. Young Indian Foundation. All rights reserved | Design by
                             <!-- <a href="http://w3layouts.com">W3layouts</a> -->
                         </p>
                     </div>
@@ -24,7 +24,7 @@
         crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
         <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-        <script type="text/javascript" src="js/request.js"></script>
+        <script type="text/javascript" src="<?php echo base_url();?>public/js/request.js"></script>
 </body>
 
 </html>

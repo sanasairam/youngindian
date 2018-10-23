@@ -14,14 +14,15 @@ class Youngindian extends CI_Controller {
 
 	public function register()
 	{
+        $userDetails = false;
+        $registrationFailed = false;
 
-
-		$userDetails = false;
         if ($this->input->post("redg-submit")) {
 			$this->load->model("Users");
 			$this->load->helper('security');
 			$uuid = xss_clean($this->input->post('uuid'), $is_image = false);
-			$userDetails = $this->Users->user_add($this->input->post("first_name"), 
+			$userDetails = $this->Users->user_add(
+            $this->input->post("first_name"), 
 			$this->input->post("last_name"),
 			$this->input->post("sur_name"),
 			$this->input->post("dob"),
@@ -35,14 +36,16 @@ class Youngindian extends CI_Controller {
 			$this->input->post("pincode"), 
 			$this->input->post("address"));
             if ($userDetails) {
-                return true;
-			}
-			else{
-				return false;
-			}
+                $userDetails = true;
+            }
+            else{
+                $registrationFailed = true;
+            }
         }
+
+        
         $this->load->view('header');
-        $this->load->view('registration', array("userDetails" => $userDetails));
+        $this->load->view('registration', array("userDetails" => $userDetails,"registrationFailed" => $registrationFailed ));
         $this->load->view('footer');
 	}
 

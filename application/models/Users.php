@@ -15,9 +15,19 @@ class Users extends CI_Model {
 		return $this->db->query($sql);
 	}
 
-	public function users_list($uuid, $first_name, $last_name, $sur_name, $dob, $gender, $email, $mobile, $country, $state, $city, $area, $pincode, $address){
+	public function users_list(){
 
-		$sql = "SELECT first_name, last_name, sur_name, dob, gender, email, mobile, country, state, city, area, pincode, address FROM users where uuid = $uuid";
+		$sql = "SELECT first_name, sur_name, mobile, city, area FROM users";
+		$userDetails = $this->db->query($sql);
+		return $userDetails->result();
+	}
+
+	public function admins_list($user_name, $password){
+
+		$sql = "SELECT *  FROM admins where username = '$user_name' ";
+		$adminDetails = $this->db->query($sql);
+		return $adminDetails->result();
+
 	}
 
 

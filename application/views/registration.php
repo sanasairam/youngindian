@@ -15,6 +15,8 @@
                     <div class="row">
                     <span><?php if($userDetails){
                      echo "submited successfully" ;
+                    } if($registrationFailed){
+                        echo "registration failed";
                     } ?></span>
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="form-group">

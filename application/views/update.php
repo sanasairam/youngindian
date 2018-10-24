@@ -13,29 +13,24 @@
             <div class="registration-form my-5">
                 <form class="volunteerRegistration" action="./register" method="POST">
                     <div class="row">
-                    <span><?php if($userDetails){
-                     echo "submited successfully" ;
-                    } if($registrationFailed){
-                        echo "registration failed";
-                    } ?></span>
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="first_name">First Name :</label>
-                                <input type="text" name="first_name" class="form-control" id="first_name" placeholder="Enter First Name" required>
+                                <input type="text" name="first_name" value="<?php echo $userDetails[0]->first_name; ?>"  class="form-control" id="first_name" placeholder="Enter First Name" required>
                                 <small id="errorMsg" class="form-text text-muted"> </small>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="last_name">Last Name :</label>
-                                <input type="text" name="last_name" class="form-control" id="last_name" placeholder="Enter Last Name">
+                                <input type="text" name="last_name" value="<?php echo $userDetails[0]->last_name; ?>" class="form-control" id="last_name" placeholder="Enter Last Name">
                                 <small id="errorMsg" class="form-text text-muted"> </small>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-lg-3">
                             <div class="form-group">
                                 <label for="sur_name">Surname :</label>
-                                <input type="text" name="sur_name" class="form-control" id="sur_name" placeholder="Enter Surname">
+                                <input type="text" name="sur_name" value="<?php echo $userDetails[0]->sur_name; ?>" class="form-control" id="sur_name" placeholder="Enter Surname">
                                 <small id="errorMsg" class="form-text text-muted"> </small>
                             </div>
                         </div>
@@ -60,7 +55,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="dob">Date Of Birth :</label>
-                                <input type="text" name="dob" class="form-control" id="dob" placeholder="Enter DOB">
+                                <input type="text" name="dob" value="<?php echo $userDetails[0]->dob; ?>" class="form-control" id="dob" placeholder="Enter DOB">
                                 <small id="errorMsg" class="form-text text-muted"> </small>
                             </div>
                         </div>
@@ -68,22 +63,25 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-lg-3">
                             <div class="form-group">
                                 <label for="email_id">Email :</label>
-                                <input type="email" name="email_id" class="form-control" id="email_id" placeholder="Enter Email">
+                                <input type="email" name="email_id" value="<?php echo $userDetails[0]->email; ?>" class="form-control" id="email_id" placeholder="Enter Email">
                                 <small id="errorMsg" class="form-text text-muted"> </small>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="mobile_num">Mobile Number :</label>
-                                <input type="text" name="mobile_num" class="form-control" id="mobile_num" placeholder="Enter Mobile Number">
+                                <input type="text" name="mobile_num" value="<?php echo $userDetails[0]->mobile; ?>" class="form-control" id="mobile_num" placeholder="Enter Mobile Number">
                                 <small id="errorMsg" class="form-text text-muted"> </small>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="country">Select Country:</label>
-                                <select class="countries form-control" name="country" id="country">
-                                    <option value="0">select bandy</option>
+                                <select class="form-control" name="country" id="country">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
                                 </select>
                                 <small id="errorMsg" class="form-text text-muted"> </small>
                             </div>
@@ -91,17 +89,11 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-lg-3">
                             <div class="form-group">
                                 <label for="state">Select State:</label>
-                                <select class="states form-control" name="state" id="state" >
-                                    <option value="0">select bandy</option>
-                                </select>
-                                <small id="errorMsg" class="form-text text-muted"> </small>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 mb-lg-3">
-                            <div class="form-group">
-                                <label for="city">Select city:</label>
-                                <select class="cities form-control" name="city" id="city">
-                                    <option value="0">select bandy</option>
+                                <select class="form-control" name="state" id="state">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
                                 </select>
                                 <small id="errorMsg" class="form-text text-muted"> </small>
                             </div>
@@ -144,4 +136,3 @@
 
         </div>
     </section>
-    

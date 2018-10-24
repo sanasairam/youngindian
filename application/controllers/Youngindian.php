@@ -47,6 +47,7 @@ class Youngindian extends CI_Controller {
         $this->load->view('header');
         $this->load->view('registration', array("userDetails" => $userDetails,"registrationFailed" => $registrationFailed ));
         $this->load->view('footer');
+        $this->load->view('validation');
 	}
 
     public function userDetails()

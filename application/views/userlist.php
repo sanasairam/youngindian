@@ -13,13 +13,14 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Logout</a>
+						<a class="nav-link" href="<?php echo base_url();?>index.php/admin/logout">Logout</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</section>
 	<div class="container">
+	Welcome <?php echo $this->session->userdata('user'); ?>   
 		<section class="volunteers__table my-5">
 			<table class="table table-hover">
 				<thead>
@@ -46,7 +47,7 @@
 						<td>{$users[$i]->city}</td>
 						<td>12345678</td>
 						<td><a href='#'>active</a></td>
-						<td><a href='#'><i class='fa fa-edit' aria-hidden='true'></i></a></td>
+						<td><a href='singleUserDetails/{$users[$i]->uuid}'><i class='fa fa-edit' aria-hidden='true'></i></a></td>
 						<td><a href='#'><i class='fa fa-trash-alt' aria-hidden='true'></i></a></td>
                     </tr>
                     ";

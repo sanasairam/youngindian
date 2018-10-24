@@ -25,10 +25,6 @@ $(document).ready(function () {
                 required: true,
                 minlength: 4
             },
-            city: {
-                required: true,
-                minlength: 4
-            },
             area: {
                 required: true,
                 minlength: 4
@@ -52,7 +48,6 @@ $(document).ready(function () {
             dob: " Please Enter Valid DOB",
             email_id: " Please Enter Valid email_id",
             mobile_num: " Please Enter Valid mobile_num",
-            city: " Please Enter Valid city",
             area: " Please Enter Valid area",
             pincode: " Please Enter Valid pincode",
             address: " Please Enter Valid address",

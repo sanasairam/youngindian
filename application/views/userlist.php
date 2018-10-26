@@ -40,12 +40,11 @@
                     <?php for ($i=0; $i < count($users) ; $i++) { 
                         echo "            
 					<tr>
-						<th scope='row'>1</th>
+						<th scope='row'>{$i}</th>
 						<td>{$users[$i]->first_name}</td>
 						<td>{$users[$i]->sur_name}</td>
 						<td>{$users[$i]->mobile}</td>
 						<td>{$users[$i]->city}</td>
-						<td>12345678</td>
 						<td><a href='#'>active</a></td>
 						<td><a href='singleUserDetails/{$users[$i]->uuid}'><i class='fa fa-edit' aria-hidden='true'></i></a></td>
 						<td><a href='#'><i class='fa fa-trash-alt' aria-hidden='true'></i></a></td>
@@ -57,3 +56,5 @@
 			</table>
 		</section>
 	</div>
+
+						<!-- <td>{$users[$i]->volunteerid != ''? $users[$i]->volunteerid : 'please activate' }</td> -->

@@ -127,7 +127,18 @@
                                 <small id="errorMsg" class="form-text text-muted"> </small>
                             </div>
                         </div>
-
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-lg-3">
+                        <div class="form-group">
+                            <label for="ProfileImage">Profile Image</label>
+                            <input type="file" class="form-control-file" id="ProfileImage">
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-lg-3">
+                            <div class="form-group">
+                                <label for="IdentityProof">Identity Proof</label>
+                                <input type="file" class="form-control-file" id="IdentityProof">
+                            </div>
+                        </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="address">Address :</label>

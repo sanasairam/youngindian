@@ -1,262 +1,279 @@
-    <div class="header-section">
-    </div>
-    <div class="header-section__content">
-        <span>" The simplest acts of kindness are by far more powerful then a thousand heads bowing in prayer. "</span>
-    </div>
-    <section class="w3-about" id="section2">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-6 wthree-abt-info">
-					<h2>ABOUT US</h2>
-					<p class="abt-text my-xl-4 my-lg-3 my-md-4 my-3">To work towards creating a better India which provides basic
-						health,education and empowerment to every
-						citizen.Thousands of children , who are deprived of even the basic necessities in life, require our
+<div class="banner">
+		<div class="container">
+			<div class="banner-top">
+				<section class="slider" id="home">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<div class="banner-text">
+									<h3>Lorem ipsum dolor sit amet</h3>
+									<p>Aenean consectetur fringilla mi</p>
+								</div>
+							</li>
+							<li>
+								<div class="banner-text">
+									<h3>Lorem ipsum dolor sit amet</h3>
+									<p>Aenean consectetur fringilla mi</p>
+								</div>
+							</li>
+							<li>
+								<div class="banner-text">
+									<h3>Lorem ipsum dolor sit amet</h3>
+									<p>Aenean consectetur fringilla mi</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	
+	<div class="about" id="about">
+		<div class="container">
+			<div class="about-top heading">
+				<h2>About Us</h2>
+			</div>
+			<div class="about-bottom">
+				<div class="col-md-5 about-left">
+					<img src="<?php echo base_url();?>html/images/abt1.jpg" alt="" />
+				</div>
+				<div class="col-md-7 about-right">
+					<h4>To work towards creating a better India which provides basic health,education and empowerment </h4>
+					<p>To every citizen.Thousands of children , who are deprived of even the basic necessities in life, require our
 						support and above all a little care to live a dignified life. This Support can be given to them by
 						generous contributions from caring people like you. Through your unique connection with the child,
 						you will see how you can lead to extraordinary and lasting, positive changes in the lives of such
 						children and their families.We take personal responsibility for using our resources efficiently,
 						achieving measurable results, and being accountable to supporters, partners and, most of all, children.</p>
-					<!-- <a href="#" class="btn px-4" data-toggle="modal" data-target=".bd-example-modal-lg">READ MORE</a> -->
 				</div>
-				<div class="col-lg-6 p-0">
-					<img src="<?php echo base_url();?>public/img/about.jpg" alt="about-image-agileits" class="img-fluid" />
-				</div>
+				<div class="clearfix"> </div>
 			</div>
 		</div>
-	</section>
-
-	<section>
-		<div class="services">
-			<div class="container">
-				<h2 class="w3ls_head">
-					<span>Our </span>Services</h2>
-				<div class="services-w3ls row">
-					<div class="col-md-4 services-grids top">
-						<i class="fas fa-graduation-cap" aria-hidden="true"></i>
-						<h4>Education </h4>
-						<p>Provide Scholarships, Free-of-cost-school for underprivileged children, Empower India Rural Girl
-							Children with Education, Helping students to fulfill their Goals</p>
-
+	</div>
+	
+	<div class="welcome" id="services">
+		<div class="container">
+			<div class="welcome-top">
+				<div class="col-md-4 welcome-left heading">
+					<h2>Our Services</h2>
+					<h5>Provide Scholarships, Food, Free Education,...</h5>
+					<p>The Young Indian Foundation is a charity working collaboratively with our voluntary sector organisations to
+						assist them to become more efficient and effective in all areas of their work.</p>
+				</div>
+				<div class="col-md-4 welcome-left">
+					<div class="welcome-one">
+						<div class="wel-left">
+							<span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+						</div>
+						<div class="wel-right">
+							<h4>Education </h4>
+							<p> Provide Scholarships, Free-of-cost-school for underprivileged children, Empower India Rural Girl
+								Children with Education, Helping students to fulfill their Goals</p>
+						</div>
+						<div class="clearfix"></div>
 					</div>
-					<div class="col-md-4 services-grids top-1">
-						<i class="fas fa-utensils icon" aria-hidden="true"></i>
-						<h4>Food </h4>
-						<p>We have the bank where we store collect and store food.Whenever we required we will collect food
-							from bank and server them. In that case we will provide food.</p>
+					<div class="welcome-two">
+						<div class="wel-left">
+							<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+						</div>
+						<div class="wel-right">
+							<h4>WOMEN’S WELFARE </h4>
+							<p> Women’s are equally to men. We believe that no child should give up on their dreams due to lack of
+								funds.Lets gift them a smile. Reproductive health, Economic, Political, Educational Empowerment.</p>
+						</div>
+						<div class="clearfix"></div>
 					</div>
-					<div class="col-md-4 services-grids top-2">
-						<i class="fas fa-users icon" aria-hidden="true"></i>
-						<h4>Women’s welfare</h4>
-						<p>Women’s are equally to men. We believe that no child should give up on their dreams due to lack of
-							funds.Lets gift them a smile. Reproductive health, Economic, Political, Educational Empowerment.</p>
+				</div>
+				<div class="col-md-4 welcome-left">
+					<div class="welcome-one">
+						<div class="wel-left">
+							<span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+						</div>
+						<div class="wel-right">
+							<h4>MEDICAL CAMPAIGN'S</h4>
+							<p> We focus on the bulk of their efforts on researching causes and cure of diseses and develope new treatments
+								through our Medical Campaign's.</p>
+						</div>
+						<div class="clearfix"></div>
 					</div>
-					<div class="col-md-4 services-grids top-3">
-						<i class="fas fa-briefcase icon" aria-hidden="true"></i>
-						<h4>Health </h4>
-						<p> Ill health, in turn, is a major cause of poverty.Strong health systems improve the health status
-							of the whole population. Providing free medicines, Donating blood </p>
+					<div class="welcome-two">
+						<div class="wel-left">
+							<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+						</div>
+						<div class="wel-right">
+							<h4>Food </h4>
+							<p> We have the bank where we store collect and store food.Whenever we required we will collect food from bank
+								and server them. In that case we will provide food.</p>
+						</div>
+						<div class="clearfix"></div>
 					</div>
-					<div class="col-md-4 services-grids top-4">
-						<i class="fas fa-user-md icon" aria-hidden="true"></i>
-						<h4>Medical Campaign's </h4>
-						<p>We focus on the bulk of their efforts on researching causes and cure of diseses and develope new
-							treatments through our Medical Campaign's.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="events" id="event">
+		<div class="container">
+			<div class="events-top heading">
+				<h3>Latest Events</h3>
+				<p>Donec egestas nibh eu ipsum euismod cursus. Aliquam et arcu blandit, efficitur ante a, lacinia neque.
+					Pellentesque lectus neque, vehicula vitae massa ac, malesuada dictum velit.</p>
+			</div>
+			<div class="events-bottom">
+				<div class="col-md-6 event-left">
+					<img src="<?php echo base_url();?>html/images/yif1.JPG" alt="" />
+					<div class="event">
+						<h4>Vivamus pulvinar lectus eu purus</h4>
+						<p> To get awarness among the people and what are the resources providing by Govt and are the things we are
+							providing to the people should get an idea.</p>
 					</div>
-					<div class="col-md-4 services-grids top-5">
-						<i class="fas fa-book icon" aria-hidden="true"></i>
-						<h4>Awarness programs</h4>
-						<p>To get awarness among the people and what are the resources providing by Govt and are the things
-							we are providing to the people should get an idea.</p>
+					<div class="date">
+					</div>
+				</div>
+				<div class="col-md-3 event-right">
+					<div class="e-1">
+						<img src="<?php echo base_url();?>html/images/yif2.JPG" alt="" />
+						<h4>Morbi et facilisis tellus</h4>
+					</div>
+					<div class="e-2">
+						<img src="<?php echo base_url();?>html/images/yif3.JPG" alt="" />
+						<h4>Morbi et facilisis tellus</h4>
+					</div>
+				</div>
+				<div class="col-md-3 event-right">
+					<div class="e-1">
+						<img src="<?php echo base_url();?>html/images/yif4.JPG" alt="" />
+						<h4>Morbi et facilisis tellus</h4>
+					</div>
+					<div class="e-2">
+						<img src="<?php echo base_url();?>html/images/yif5.JPG" alt="" />
+						<h4>Morbi et facilisis tellus</h4>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="help" id="help">
+		<div class="help-left">
+			<img src="<?php echo base_url();?>html/images/weneed.jpg" alt="" height="400px" />
+		</div>
+		<div class="help-right heading">
+			<h3>We Need Your Help</h3>
+			<h5>Mauris iaculis mollis ante a sagittis eget.</h5>
+			<p>Praesent iaculis purus at arcu pharetra sodales. Nunc vehicula congue odio ultricies bibendum. Vestibulum vitae
+				varius eros. Curabitur pulvinar tempus pellentesque. Curabitur magna dui, ultricies nec ultrices rutrum, facilisis
+				at augue. Proin laoreet dui gravida dictum euismod. Nullam molestie ante non magna vestibulum imperdiet vitae ac
+				tortor. Praesent sed maximus ligula.</p>
+			
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	
+	<div class="gallery" id="gallery">
+		<div class="container">
+			<div class="gallery-top heading">
+				<h3>Gallery</h3>
+			</div>
+			<div class="gallery-bottom grid">
+				<div class="g-1">
+					<div class="col-md-3 g-left">
+						<a href="<?php echo base_url();?>html/images/yif1.JPG" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<figure class="effect-oscar">
+								<img src="<?php echo base_url();?>html/images/yif1.JPG" alt="" />
+								<figcaption>
+									<h2>Sed id dolor</h2>
+									<p>Vestibulum mollis mollis elit nec ullamcorper</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-3 g-left">
+						<a href="<?php echo base_url();?>html/images/yif2.JPG" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<figure class="effect-oscar">
+								<img src="<?php echo base_url();?>html/images/yif2.JPG" alt="" />
+								<figcaption>
+									<h2>Sed id dolor</h2>
+									<p>Vestibulum mollis mollis elit nec ullamcorper</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-3 g-right">
+						<a href="<?php echo base_url();?>html/images/yif3.JPG" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<figure class="effect-oscar">
+								<img src="<?php echo base_url();?>html/images/yif3.JPG" alt="img09" />
+								<figcaption>
+									<h2>Sed id dolor</h2>
+									<p>Vestibulum mollis mollis elit nec ullamcorper</p>
+								</figcaption>
+							</figure>
+						</a>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-			</div>
-		</div>
-	</section>
-
-	<section>
-		<!-- portfolio -->
-		<div class="portfolio">
-			<div class="container">
-				<div class="agileits-title text-center mb-5">
-					<h2 class="w3ls_head">
-						<span>Port</span>folio</h2>
-				</div>
-
-
-				<div class="filtr-container  agileits">
-
-					<div class="filtr-item  agileits portfolio-t" data-category="1, 5" data-sort="Busy streets">
-						<a href="<?php echo base_url();?>public/img/g1.jpg" class="b-link-stripe  agileits b-animate-go thickbox">
-							<figure>
-								<img src="<?php echo base_url();?>public/img/g1.jpg" class="img-responsive  agileits" alt=" Agileits" />
+				<div class="g-2">
+					<div class="col-md-4 g-right">
+						<a href="<?php echo base_url();?>html/images/yif4.JPG" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<figure class="effect-oscar">
+								<img src="<?php echo base_url();?>html/images/yif4.JPG" alt="img09" />
 								<figcaption>
-									<h3>Negotiation</h3>
+									<h2>Sed id dolor</h2>
+									<p>Vestibulum mollis mollis elit nec ullamcorper</p>
 								</figcaption>
 							</figure>
 						</a>
 					</div>
-
-					<div class="filtr-item  agileits" data-category="2, 5" data-sort="Luminous night">
-						<a href="<?php echo base_url();?>public/img/g2.jpg" class="b-link-stripe  agileits b-animate-go thickbox">
-							<figure>
-								<img src="<?php echo base_url();?>public/img/g2.jpg" class="img-responsive  agileits" alt=" Agileits" />
+					<div class="col-md-3 g-left">
+						<a href="<?php echo base_url();?>html/images/yif5.JPG" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<figure class="effect-oscar">
+								<img src="<?php echo base_url();?>html/images/yif5.JPG" alt="img09" />
 								<figcaption>
-									<h3>Negotiation</h3>
+									<h2>Sed id dolor</h2>
+									<p>Vestibulum mollis mollis elit nec ullamcorper</p>
 								</figcaption>
 							</figure>
 						</a>
 					</div>
-
-					<div class="filtr-item  agileits" data-category="1, 4" data-sort="City wonders">
-						<a href="<?php echo base_url();?>public/img/g3.jpg" class="b-link-stripe  agileits b-animate-go thickbox">
-							<figure>
-								<img src="<?php echo base_url();?>public/img/g3.jpg" class="img-responsive  agileits" alt=" Agileits" />
+					<div class="col-md-3 g-left">
+						<a href="<?php echo base_url();?>html/images/yif6.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<figure class="effect-oscar">
+								<img src="<?php echo base_url();?>html/images/yif6.jpg" alt="img09" />
 								<figcaption>
-									<h3>Negotiation</h3>
+									<h2>Sed id dolor</h2>
+									<p>Vestibulum mollis mollis elit nec ullamcorper</p>
 								</figcaption>
 							</figure>
 						</a>
 					</div>
-
-					<div class="filtr-item  agileits" data-category="1, 4" data-sort="City wonders">
-						<a href="<?php echo base_url();?>public/img/g3.jpg" class="b-link-stripe  agileits b-animate-go thickbox">
-							<figure>
-								<img src="<?php echo base_url();?>public/img/g3.jpg" class="img-responsive  agileits" alt=" Agileits" />
-								<figcaption>
-									<h3>Negotiation</h3>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="filtr-item  agileits" data-category="1, 4" data-sort="City wonders">
-						<a href="<?php echo base_url();?>public/img/g3.jpg" class="b-link-stripe  agileits b-animate-go thickbox">
-							<figure>
-								<img src="<?php echo base_url();?>public/img/g3.jpg" class="img-responsive  agileits" alt=" Agileits" />
-								<figcaption>
-									<h3>Negotiation</h3>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="filtr-item  agileits" data-category="1, 4" data-sort="City wonders">
-						<a href="<?php echo base_url();?>public/img/g3.jpg" class="b-link-stripe  agileits b-animate-go thickbox">
-							<figure>
-								<img src="<?php echo base_url();?>public/img/g3.jpg" class="img-responsive  agileits" alt=" Agileits" />
-								<figcaption>
-									<h3>Negotiation</h3>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-
-
-
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</div>
-		<!-- //portfolio -->
-	</section>
-
-	<section class="w3-about" id="section2">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-6 p-0">
-					<img src="<?php echo base_url();?>public/img/13583.jpg" alt="about-image-agileits" class="img-fluid" />
-				</div>
-				<div class="col-lg-6 wthree-abt-info">
-					
-						<p class="quote">"There is no exercise better for the heart than reaching down and lifting people up"</p>
-					
-					<h2 class="text-center">
-						Want To Donate !!
-					</h2>
-
-					<br />
-					<div class="bank-details">
-						<div class="d-flex">
-							<h6>Bank Name : </h6>
-							<h6> &nbsp;Canara Bank</h6>
-						</div>
-						<div>
-							<p><span>Account Name : </span><span>Young Indian Trust</span></p>
-							<p><span>Account Number : </span><span>2720201005671</span></p>
-							<p><span>IFSC Code : </span><span>CNRB0002720</span></p>
-							<p><span>Branch Name : </span><span>HimayathNagar Brach , Hyderabad</span></p>
-						</div>
-					</div>
+					<div class="clearfix"> </div>
 				</div>
 
 			</div>
 		</div>
-	</section>
+	</div>
 
-
-	<!-- Contact section -->
-	<section class="contact content-section" id="section8">
+	<div class="address" id="address">
 		<div class="container">
-			<header class="w3-heading py-lg-5 pt-5 text-center">
-				<h3>Contact Us</h3>
-				<p>Please Feel Free to Contact</p>
-			</header>
-			<!-- //end heading -->
-			<div class="row form-container py-3">
-
-				<div class="col-md-8 contact-form">
-					<h4 class="mb-4">Drop us a line</h4>
-					<form id="contactForm" method="post" action="#">
-						<div class="form-group">
-							<input type="text" class="form-control" id="name" name="name" placeholder="Your Name..." value="" required>
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control" id="email" name="email" placeholder="Your email..." value="" required>
-						</div>
-						<div class="form-group">
-							<input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone..." value="" required>
-						</div>
-						<div class="form-group">
-							<textarea class="form-control" rows="4" name="message" placeholder="Your message..." required></textarea>
-						</div>
-						<div class="form-group">
-							<button type="submit" name="submit" class="btn btn-default">
-								<i class="fa fa-paper-plane fa-fw"></i> Send</button>
-						</div>
-					</form>
+			<div class="address-top">
+				<div class="col-md-4 add-left">
+					<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+					<p><label>Young Indain Foundation</label>
+						795 Folsom Ave, Suite 600
+						San Francisco, CA 94107</p>
 				</div>
-				<!-- /.contact-form -->
-
-				<div class="col-md-4 agile-w3ls-contact-address mt-sm-4 mt-0">
-					<h4 class="mb-4">Our address</h4>
-					<address>
-						<p class="my-3 d-flex">
-							<i class="fa fa-map-marker fa-fw mr-2"></i>
-							<label>Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
-						</p>
-						<ul>
-							<li class="my-3">
-								<i class="fa fa-envelope fa-fw mr-2"></i>
-								<a href="mailto:info@example.com">example.com</a>
-							</li>
-							<li class="my-3">
-								<i class="fa fa-phone fa-fw mr-2"></i>+91 99999 99999</li>
-						</ul>
-					</address>
+				<div class="col-md-4 add-left">
+					<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+					<p>+91 888555 6070</p>
 				</div>
-				<!-- /.contact-address -->
-
+				<div class="col-md-4 add-left">
+					<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+					<p><a href="mailto:youngindiansfoundation.inbox@gmail.com">youngindiansfoundation.inbox@gmail.com</a></p>
+				</div>
+				<div class="clearfix"></div>
 			</div>
-			<!-- /.row -->
 		</div>
-		<!-- /.container -->
-		<!-- 
-        <div class="container-fluid w3-agile-google-map pt-5">
-            <div class="row">
-                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2798893698!2d-74.25986762659859!3d40.697670067978756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1522490274976"
-                    style="border:0" allowfullscreen></iframe>
-            </div>
-            /.row
-        </div> -->
-		<!-- /.container-fluid -->
-
-	</section>
+	</div>

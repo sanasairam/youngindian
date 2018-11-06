@@ -8,9 +8,9 @@ class Users extends CI_Model {
 		
 	}
 
-	public function user_add($first_name, $last_name, $sur_name, $dob, $gender, $email, $mobile, $country, $state, $city, $area, $pincode, $address){
+	public function user_add($first_name, $sur_name, $dob, $gender, $email, $mobile, $country, $state, $city, $area, $pincode, $education,$jobprofile, $address, $identity_num=null, $identity_file=null, $profile_image=null){
 
-		$sql = "INSERT INTO users(first_name, last_name, sur_name, dob, gender, email, mobile, country, state, city, area, pincode, address) VALUES ('$first_name', '$last_name', '$sur_name', '$dob', '$gender', '$email', '$mobile', '$country', '$state', '$city', '$area', '$pincode', '$address')";
+		$sql = "INSERT INTO users(first_name, sur_name, dob, gender, email, mobile, country, state, city, area, pincode,education,jobprofile, address,identity_num,identity_file,profile_image) VALUES ('$first_name', '$sur_name', '$dob', '$gender', '$email', '$mobile', '$country', '$state', '$city', '$area', '$pincode','$education','$jobprofile', '$address','$identity_num','$identity_file','$profile_image')";
 
 		return $this->db->query($sql);
 	}

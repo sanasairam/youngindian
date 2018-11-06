@@ -2,78 +2,77 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="<?php echo base_url();?>public/css/style.css">
-    <link rel="stylesheet" href="<?php echo base_url();?>public/css/fontawesome-all.css">
-    
+	<title>Young Indian Foundation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Young Indian Foundation Trust Free Education" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+
+	</script>
+	<link href="<?php echo base_url();?>html/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="<?php echo base_url();?>html/css/style.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="<?php echo base_url();?>html/css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo base_url();?>html/css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+	<style>
+	.error {
+  color: red;
+  font-family: verdana, Helvetica;
+  font-size: 0.6rem; 
+  margin-bottom : 0;}
+</style>
+
 </head>
 
 <body>
-
- 	<div class="w3ls-banner-info-bottom">
+	
+	<div class="head" id="home">
 		<div class="container">
-			<div class="banner-address">
-				<div class="row d-flex justify-content-between">
-					<div class="col-md-3 banner-address-left">
-						<p>
-							<i class="fa fa-map-marker" aria-hidden="true"></i> Broome St, NY 10002.</p>
-					</div>
-					<div class="col-md-3 banner-address-left">
-						<p>
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-							<a href="mailto:example@email.com">mail@example.com</a>
-						</p>
-					</div>
-					<div class="col-md-3 banner-address-left">
-						<p>
-							<i class="fa fa-phone" aria-hidden="true"></i> +1 234 567 8901</p>
+			<div class="head-top">
+				<div class="col-md-6 h-left">
+					<p>+91 888 555 6070</p>
+				</div>
+				<div class="col-md-6 h-right">
+					<div class="btn-group">
+						<a href="./youngindian/register" type="button" class="btn btn-warning">Registration</a>
 					</div>
 				</div>
-				<div class="clearfix"> </div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
-	<section>
+	
+	<div class="header">
+		<div class="container-fluid">
+			<div class="header-main">
+				<div class="logo">
+					<a href="index.html">
+						<img src="<?php echo base_url();?>html/images/logoMain.png" alt="logomain" width="260px" />
+					</a>
+				</div>
+				<div class="head-right">
+					<div class="top-nav">
+						<span class="menu"><img src="<?php echo base_url();?>html/images/nav-icon.png" alt="" /> </span>
+						<ul>
+							<li><a href="#home" class="active scroll">Home</a></li>
+							<li><a href="#about" class="scroll">About</a></li>
+							<li><a href="#services" class="scroll">Services</a></li>
+							<li><a href="#help" class="scroll">Donate</a></li>
+							<li><a href="#gallery" class="scroll">Gallery</a></li>
+							<li><a href="#address" class="scroll">Contact</a></li>
+							<div class="clearfix"> </div>
+						</ul>
 
-		<nav class="navbar-main navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="./">Young Indian Foundation</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-			 aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="./">Home
-							<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./">Services</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./">Gallery</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./">Donate</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="<?php echo base_url();?>index.php/youngindian/register">Join Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./">Contact</a>
-					</li>
-
-
-				</ul>
+					</div>
+				</div>
 			</div>
-		</nav>
-
-	</section>
-    
+		</div>
+	</div>
+	
+	

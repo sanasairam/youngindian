@@ -14,16 +14,35 @@ class Youngindian extends CI_Controller {
 
 	public function register()
 	{
+        // echo json_encode($_FILES);exit;
         $userDetails = false;
         $registrationFailed = false;
+        $error = false;
+        $errormessage = "";
 
         if ($this->input->post("redg-submit")) {
 			$this->load->model("Users");
-			$this->load->helper('security');
+            $this->load->helper('security');
+
+            $profileImage=$this->image_upload("profileimage");
+            if(!$profileImage->status){
+                $error = true;
+                $errormessage = $profileImage->message;
+            }
+            else{
+                $profileImage = $profileImage->filename;
+            }
+            $identityproof=!$error?$this->image_upload("identityproof"):false;
+            if(!$error && !$identityproof->status){
+                $error = true;
+                $errormessage = $identityproof->message;
+            }
+            else{
+                $identityproof = $identityproof->filename;
+            }
 			$uuid = xss_clean($this->input->post('uuid'), $is_image = false);
-			$userDetails = $this->Users->user_add(
+			$userDetails = !$error ? $this->Users->user_add(
             $this->input->post("first_name"), 
-			$this->input->post("last_name"),
 			$this->input->post("sur_name"),
 			$this->input->post("dob"),
 			$this->input->post("gender"),
@@ -34,22 +53,54 @@ class Youngindian extends CI_Controller {
 			$this->input->post("city"),
 			$this->input->post("area"), 
 			$this->input->post("pincode"), 
-			$this->input->post("address"));
-            if ($userDetails) {
+			$this->input->post("education"), 
+			$this->input->post("jobprofile"), 
+			$this->input->post("address"),
+            $this->input->post("identity_num"),
+            $profileImage,
+            $identityproof):false;
+            if (!$error && $userDetails) {
                 $userDetails = true;
+
             }
-            else{
+            else if(!$error){
                 $registrationFailed = true;
+                $error = true;
+                $errormessage = "something went wrong try again later";
             }
         }
-
-        
-        $this->load->view('header');
-        $this->load->view('registration', array("userDetails" => $userDetails,"registrationFailed" => $registrationFailed ));
+        $this->load->view('head');
+        $this->load->view('registration', array("userDetails" => $userDetails,"registrationFailed" => $error, "errormessage" => $errormessage ));
         $this->load->view('footer');
         $this->load->view('validation');
 	}
+    public function image_upload($image)
+    {
+            $config['upload_path'] = './uploads/';
+            $config['allowed_types'] = 'gif|jpg|png|jpeg|JPG|PNG|GIF|JPEG';
+            $config['max_size'] = 2048;
+            $config['overwrite'] = TRUE;
+            $config['encrypt_name'] = TRUE;
+            $config['remove_spaces'] = TRUE;
+            if ( ! is_dir($config['upload_path']) ) {
+                mkdir($config['upload_path'] ); 
+            }
+            $this->load->library('upload', $config);
+            $this->load->library('upload', $config);
+            if (!$this->upload->do_upload($image))
+            {
+                    $error =  $this->upload->display_errors("","");
+                    return (object) array("status"=>false, "message"=>$error);
+            }
+            else
+            {
+                    $data = $this->upload->data();
+                    // return $data['file_name'];
+                    return (object) array("status"=>true, "filename"=>$data['file_name']);
 
+                    // $this->load->view('upload_success', $data);
+            }
+    }
     public function userDetails()
     {
         $uuid = $this->input->post('uuid') ? $this->input->post('uuid') : 0;
